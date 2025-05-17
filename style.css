@@ -843,71 +843,77 @@ body {
   }
 }
 
-/* Enhanced Mobile Responsiveness */
+/* Enhanced Mobile View */
 @media (max-width: 768px) {
   html {
-    font-size: 60%;
+    font-size: 65%; /* Larger base font */
   }
 
   body {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  section {
+    padding: 2rem 1rem; /* Reduced padding between sections */
   }
 
   .home {
     flex-direction: column;
-    gap: 3rem;
-    padding: 4rem 2rem;
+    gap: 2rem;
+    padding: 3rem 1rem;
     text-align: center;
   }
 
   .home-img img {
-    max-width: 80%;
+    width: 90%;
+    max-width: 300px;
     height: auto;
     border-radius: 1rem;
   }
 
   .home-content h1 {
-    font-size: 2.4rem;
+    font-size: 3rem;
   }
 
   .home-content h3 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .home-content p {
-    font-size: 1.4rem;
-    padding: 0 1rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
+  .social-icon a {
+    font-size: 2.5rem;
+    margin: 0 1rem;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
   }
 
   .nav-icons {
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.95);
     position: absolute;
     top: 60px;
     left: 0;
     right: 0;
     display: none;
-    padding: 1rem;
+    padding: 2rem;
   }
 
   .navbar.active .nav-icons {
     display: flex;
   }
 
-  section {
-    padding: 4rem 2rem;
-  }
-
   #scrollTopBtn {
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
-  }
-
-  .social-icon a {
-    font-size: 2rem;
-    margin: 0 0.8rem;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
   }
 }
-
